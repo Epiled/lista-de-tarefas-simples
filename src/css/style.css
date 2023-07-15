@@ -1,13 +1,20 @@
 :root {
-    font-size: 62.5%;
-  }
-  
-  * {
-    box-sizing: border-box;
-    line-height: normal;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
+  --cor-principal: #2D573E;
+  --branco-50: rgb(255, 255, 255, .5);
+  --branco: #fff;
+  --preto: #000;
+
+  --sombra: rgba(0, 0, 0, .25);
+
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

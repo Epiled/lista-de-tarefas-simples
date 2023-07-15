@@ -8,28 +8,34 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/corpo.css">
+    <link rel="stylesheet" href="./css/formulario.css">
 </head>
 
 <body class="corpo">
     <main class="corpo__princiapl">
         <div class="formulario">
             <h1 class="formulario__titulo">Já tem Cadastro</h1>
-            <form action="" method="post">
-                <fieldset>
-                    <label class="formulario__etq" for="">Usuário:
-                        <input class="formulario__ipt" type="text" name="" id="">
-                    </label>
-                    <label class="formulario__etq" for="">Senha:
-                        <input class="formulario__ipt" type="text" name="" id="">
-                    </label>
-                    <a href="">Esqueceu a senha?</a>
+            <form class="formulario__container" action="" method="post">
+                <fieldset class="formulario__fields">
+                    <div class="formulario__wrap">
+                        <input class="formulario__ipt" type="text" name="usuario" id="usuario" required>
+                        <label class="formulario__etq" for="usuario">Usuário:
+                        </label>
+                    </div>
+                    <div class="formulario__wrap">
+                        <input class="formulario__ipt" type="text" name="senha" id="senha" required>
+                        <label class="formulario__etq" for="senha">Senha:
+                        </label>
+                    </div>
+                    <a class="formulario__link" href="">Esqueceu a senha?</a>
                     <button class="formulario__btn">Login</button>
                 </fieldset>
             </form>
-            <a href="">Ainda não tem cadastro?</a>
+            <a class="formulario__link" href="">Ainda não tem cadastro?</a>
         </div>
     </main>
-    <script src=""></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
