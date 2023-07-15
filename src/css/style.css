@@ -1,0 +1,13 @@
+:root {
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    line-height: normal;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
