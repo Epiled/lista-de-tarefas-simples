@@ -1,7 +1,28 @@
 .principal {
-
+  margin-left: 24.5rem;
+  padding: 4rem 3rem;
 }
 
 .principal__titulo {
-    
+  color: var(--cor-principal);
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-bottom: .2rem solid var(--cor-principal);
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 834px) {
+  .principal {
+    margin-left: 30rem;
+  }
+
+  .principal__titulo {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .principal__titulo {
+    font-size: 6.4rem;
+  }
 }

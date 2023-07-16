@@ -1,4 +1,12 @@
 .tarefas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
 }
 
+@media screen and (min-width: 834px) {
+
+}
+
+@media screen and (min-width: 1440px) {}

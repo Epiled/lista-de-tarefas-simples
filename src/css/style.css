@@ -5,7 +5,11 @@
   --branco: #fff;
   --preto: #000;
 
+  --cor-concluir: #127003;
+  --cor-excluir: #DE1306;
+
   --sombra: rgba(0, 0, 0, .25);
+  --sombra-15: rgba(0, 0, 0, .15);
 
   font-size: 62.5%;
 }

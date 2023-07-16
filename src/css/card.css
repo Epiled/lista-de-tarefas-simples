@@ -1,31 +1,55 @@
 .card {
-
+  max-width: 23rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem .25rem var(--sombra-15);
 }
 
 .card__titulo {
-
+  color: var(--cor-principal);
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: .1rem solid var(--cor-principal);
+  margin-bottom: 1rem;
 }
 
 .card__tarefa {
-    
+  font-size: 1.2rem;
+  border-bottom: .1rem solid var(--cor-principal);
+  min-height: 12rem;
 }
 
 .card__txt {
-    
+  font-size: 1.2rem;
 }
 
 .card__user {
-    
+  display: block;
+  text-align: right;
+  margin: .5rem 0 1rem 0;
+  font-weight: bold;
+  color: #868686;
 }
 
 .card__acoes {
-    
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__btn {
-    
+  background: var(--cor-concluir);
+  box-shadow: 0 .25rem .25rem 0 var(--sombra);
+  padding: .5rem 1.5rem;
+  outline: 0;
+  border: 0;
+  color: var(--branco);
+  border-radius: .25rem;
+  font-size: 1.2rem;
 }
 
 .card__btn--excluir {
-    
+  background: var(--cor-excluir);
 }
+
+@media screen and (min-width: 834px) {}
