@@ -6,7 +6,7 @@
     padding: 3rem;
     border-radius: .5rem;
     box-shadow: 0 .4rem .4rem 0 var(--sombra);
-    backdrop-filter: blur(10rem);
+    backdrop-filter: blur(1rem);
     background-color: var(--branco-50);
     align-items: center;
 }
@@ -41,7 +41,8 @@
     border: 0;
     border-bottom: .1rem solid var(--cor-principal);
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem .5rem .25rem;
+    background: none;
 }
 
 .formulario__etq {
@@ -49,6 +50,7 @@
     position: absolute;
     top: 50%;
     left: 0;
+    font-weight: bold;
     transform: translateY(-50%);
     transition: transform .5s, color .5s;
 }
@@ -57,8 +59,8 @@
     outline: 0;
 }
 
-.formulario__ipt:focus ~ .formulario__etq,
-.formulario__ipt:valid ~ .formulario__etq {
+.formulario__ipt:focus~.formulario__etq,
+.formulario__ipt:valid~.formulario__etq {
     color: var(--cor-principal);
     transform: translateY(calc(-50% - 2rem));
 }
@@ -80,6 +82,10 @@
     outline: 0;
     border: 0;
     font-weight: bold;
+}
+
+.formulario__btn:hover {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 834px) {
