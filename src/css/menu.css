@@ -1,15 +1,20 @@
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  left: -24.5rem;
+  color: var(--branco);
   background-color: var(--cor-principal);
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 24.5rem;
-  color: var(--branco);
-  text-align: center;
   padding: 2.5rem;
+  width: 24.5rem;
+  height: 100vh;
+  text-align: center;
+  transition: left .5s;
+}
+
+.menu--ativo {
+  left: 0;
 }
 
 .menu__imagem {
@@ -41,8 +46,23 @@
   padding: 1rem 0;
 }
 
+.menu__btn {
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+  background: var(--branco);
+  padding: 0;
+  border: 0;
+}
+
+.menu__btn[disabled] {
+  display: none;
+}
+
 @media screen and (min-width: 834px) {
   .menu {
+    position: fixed;
+    left: 0rem;
     width: 30rem;
   }
 
@@ -57,5 +77,9 @@
 
   .menu__navegacao {
     font-size: 2.4rem;
+  }
+
+  .menu__btn {
+    display: none;
   }
 }

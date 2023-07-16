@@ -1,5 +1,4 @@
 .principal {
-  margin-left: 24.5rem;
   padding: 4rem 3rem;
 }
 
@@ -14,6 +13,7 @@
 @media screen and (min-width: 834px) {
   .principal {
     margin-left: 30rem;
+    transition: margin .5s;
   }
 
   .principal__titulo {
