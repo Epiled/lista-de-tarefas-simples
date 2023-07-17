@@ -46,6 +46,10 @@
   padding: 1rem 0;
 }
 
+.menu__icon {
+  width: 2.6rem;
+}
+
 .menu__btn {
   position: fixed;
   top: 2.5rem;

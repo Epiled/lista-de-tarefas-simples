@@ -19,6 +19,17 @@ if (empty($usuario) || empty($senha) || empty($email)) {
   exit;
 }
 
+$sqlVerificarUsuario = "SELECT * FROM `usuarios` WHERE `userName` = ?";
+$stmtVerificarUsuario = $conn->prepare($sqlVerificarUsuario);
+$stmtVerificarUsuario->bind_param("s", $usuario);
+$stmtVerificarUsuario->execute();
+$resultVerificarUsuario = $stmtVerificarUsuario->get_result();
+
+if ($resultVerificarUsuario->num_rows > 0) {
+  echo 'Nome de usuário já existe.';
+  exit;
+}
+
 $sql = "INSERT INTO `usuarios` (`userName`, `senhaUser`, `email`) VALUES (?, ?, ?)";
 $stmt = $conn->prepare($sql);
 
@@ -29,12 +40,12 @@ if($stmt) {
     header('Location: ../index.html');
     exit;
   } else {
-    echo 'Ocorreu um erro ao criar um novo usu´rio tente novamente mais tarde';
+    echo 'Ocorreu um erro ao criar um novo usuário tente novamente mais tarde';
   }
 
   $stmt->close();
 } else {
-  echo 'Ocorreu um erro ao criar um novo usu´rio tente novamente mais tarde';
+  echo 'Ocorreu um erro ao criar um novo usuário tente novamente mais tarde';
 
 }
 
