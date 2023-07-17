@@ -2,11 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-
 }
 
-@media screen and (min-width: 834px) {
-
+.tarefas__mensagem {
+  font-size: 2.4rem;
 }
-
-@media screen and (min-width: 1440px) {}

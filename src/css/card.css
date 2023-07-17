@@ -4,6 +4,18 @@
   padding: 1rem;
   border-radius: .5rem;
   box-shadow: 0 0 .5rem .25rem var(--sombra-15);
+  position: relative;
+}
+
+.card[data-estado='1']::after {
+  content: 'Concluido';
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%) rotate(320deg);
+  color: #008a00;
+  z-index: 1;
+  font-size: 2.5rem;
 }
 
 .card__titulo {
